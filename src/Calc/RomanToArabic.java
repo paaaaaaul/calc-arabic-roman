@@ -1,5 +1,7 @@
 package Calc;
 
+import java.lang.reflect.Array;
+
 public class RomanToArabic {
 
 //    public static void romanToArabicMethod() {
@@ -8,7 +10,7 @@ public class RomanToArabic {
         RomanToArabic romanToArabic = new RomanToArabic();
 
         String string = "III";
-        System.out.println("RomantoArabic" + RomanToArabic.romanToDecimalTransform(string));
+        System.out.println("RomantoArabic: " + romanToDecimalTransform(string));
     }
 
     static int value(char romanChar) {
@@ -24,6 +26,7 @@ public class RomanToArabic {
 
     public static int romanToDecimalTransform(String string) {
         int res = 0;
+
         for (int i = 0; i < string.length(); i++) {
             int s1 = value(string.charAt(i));
 
@@ -44,6 +47,19 @@ public class RomanToArabic {
         return res;
     }
 
-//    }
+
+    public static String isOperator(String string) {
+
+        if (string.equals("+") ||
+                string.equals("-") ||
+                string.equals("*") ||
+                string.equals("/") ||
+                string.equals(")") ||
+                string.equals("(")
+                ) {
+            return string;
+        }
+        return string;
+    }
 
 }
