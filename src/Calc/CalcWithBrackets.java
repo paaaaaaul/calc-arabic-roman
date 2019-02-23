@@ -81,6 +81,7 @@ public class CalcWithBrackets {
 
         temp += Integer.valueOf(t.get(0));
 
+        System.out.println(temp);
         return temp;
     }
 

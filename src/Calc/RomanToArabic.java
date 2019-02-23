@@ -8,7 +8,7 @@ public class RomanToArabic {
         RomanToArabic romanToArabic = new RomanToArabic();
 
         String string = "III";
-        System.out.println(romanToArabic.romanToDecimalTransform(string));
+        System.out.println("RomantoArabic" + RomanToArabic.romanToDecimalTransform(string));
     }
 
     static int value(char romanChar) {
